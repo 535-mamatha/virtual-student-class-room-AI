@@ -3,11 +3,6 @@
 Transforming traditional classrooms into interactive, intelligent digital learning spaces.
 ---
 
-***🚀 Overview***
-
-Virtual Student Classroom AI is an innovative, AI-powered e-learning platform built with HTML5, CSS3, and Bootstrap 5.
-It brings teachers and students together in a seamless, smart virtual environment where learning never stops — anytime, anywhere.
-
 💡 Designed for modern education, it offers:
 
 🎥 Live interactive classes
@@ -19,23 +14,8 @@ It brings teachers and students together in a seamless, smart virtual environmen
 📢 Instant announcements
 
 🤖 Optional AI assistance for learning support
----
 
-***🌟 Why Choose Virtual Student Classroom AI?***
-Feature	Description
-🤖 AI-Enhanced Learning	Smarter, more personalized virtual classrooms
-🎨 Modern UI/UX	Elegant, professional interface optimized for all devices
-💻 Fully Responsive	Works smoothly across desktop, tablet, and mobile
-⚡ Lightweight & Fast	Pure HTML, CSS & Bootstrap — no heavy frameworks
-🧩 Easy to Customize	Simple structure for quick branding and content updates
-🧠 Core Features
-Icon	Feature	Description
-🎥	Live Classes	Attend and interact with teachers in real-time sessions
-📝	Notes & Materials	Upload, view, and download study resources easily
-💬	Group Discussions	Collaborate through moderated chat spaces
-📢	Announcements	Stay up-to-date with real-time notifications
-🤖	AI Assistance (Optional)	Integrate chatbots for Q&A and smart study help
-🛠️ Getting Started
+
 ---
 
 Clone the repository:
