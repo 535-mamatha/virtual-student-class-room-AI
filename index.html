@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartRoom - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts for modern look -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: 'Roboto', sans-serif; background: #F8FAFC; color: #0F172A; }
+        nav { background: #2653d0; display: flex; align-items: center; padding: 1em 0; box-shadow: 0 2px 8px #0001;}
+        .nav-logo {display: inline-flex; align-items: center; margin-left: 2em;}
+        nav a, nav button {
+            color: #fff; text-decoration: none; margin: 0 1em; font-weight: 700;
+            background: none; border: none; cursor: pointer; font-family: inherit; font-size: 1em;
+        }
+        nav a:hover, nav button:hover { color: #06B6D4;}
+        .hero {
+            background: #2653d0;
+            border-radius: 22px;
+            margin: 2em auto;
+            max-width: 960px;
+            box-shadow: 0 4px 24px #2653d033;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2.5em 4em 2.5em 4em;
+            color: #fff;
+        }
+        .hero-content {max-width:430px;}
+        .hero h1 {color: #fff; font-size:2.5em; margin-bottom:0.3em;}
+        .hero p {color: #e0e7ef; font-size:1.2em;}
+        .hero img {
+            max-width:400px;
+            border-radius:18px;
+            box-shadow: 0 3px 22px #0002;
+            margin-left: 40px;
+            background: #fff;
+        }
+        .section, .card {
+            box-shadow: 0 2px 12px #0001;
+            background: #fff;
+            border-radius: 22px;
+            margin:2em auto;
+            padding:2em 4em;
+            max-width: 960px;
+        }
+        h2 {
+            color: #2653d0;
+            margin-top: 0;
+        }
+        .btn {background:#06B6D4; color:#fff; padding:0.7em 1.5em; border:none; border-radius:25px; font-weight:bold; font-size:1em; box-shadow:0 2px 10px #06b6d41c; margin: 1em 0; cursor:pointer;}
+        .btn:hover {background:#fff; color:#06B6D4; border:1px solid #06B6D4;}
+        .nav-quick {margin-top:1em;}
+        .nav-quick a{color:#06B6D4; margin-right:1em;}
+        .nextpage-btn {background: #2653d0; color:#fff; border: none; border-radius: 8px; padding: 0.7em 2em; font-size:1em; font-weight:bold; margin-top: 1em; box-shadow: 0 2px 10px #0001;}
+        .nextpage-btn:hover {background: #06B6D4;}
+        footer {background:#0F172A; color:#fff; text-align:center; padding:1em;}
+        table {border-collapse: collapse; width: 100%;}
+        th, td {text-align: left; padding: 8px;}
+        th {background:#2653d0; color:#fff;}
+        /* Modal Styles */
+        .modal {display:none;position:fixed;z-index:9;left:0;top:0;width:100%;height:100%;overflow:auto;background:#0008;}
+        .modal-content {background-color:#fff;margin:5% auto;padding:2em;border:1px solid #888;width:90%;max-width:400px;border-radius:10px;position:relative;}
+        .close {color:#aaa;position:absolute;right:1em;top:1em;font-size:32px;font-weight:700;cursor:pointer;}
+        .close:hover {color:#06B6D4;}
+        @media(max-width:1000px){.hero{flex-direction:column;padding:2em 2em;}.hero img{margin:28px 0 0 0;max-width:98vw;}}
+        @media(max-width:700px){.section,.card{padding:1em 1em;}.hero-content,.hero img{max-width:100vw;}}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo" style="margin-right:1.5em;">
+            <!-- Modern Virtual Classroom SVG Logo -->
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" style="vertical-align:middle;">
+              <rect width="42" height="42" rx="21" fill="#06B6D4"/>
+              <rect x="12" y="16" width="18" height="12" rx="3" fill="#fff"/>
+              <path d="M15 19 L21 27 L27 19" stroke="#2653d0" stroke-width="2.3" fill="none"/>
+              <circle cx="21" cy="27" r="2" fill="#2653d0"/>
+              <rect x="17" y="30" width="8" height="1.5" rx="0.8" fill="#2653d0"/>
+            </svg>
+            <span style="font-weight: bold; font-size:1.4em; color:#fff;vertical-align:middle;margin-left:.5em;">SmartRoom</span>
+        </a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#product">Product</a>
+        <a href="#solution">Solution</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#resources">Resources</a>
+        <a href="#free-tools">Free Tools</a>
+        <a href="#login">Login</a>
+        <a href="#live-demo">Live Demo</a>
+        <button onclick="document.getElementById('signupModal').style.display='block'">Sign Up</button>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>SmartRoom</h1>
+            <p>Open access education with AI.<br>Your personal virtual classroom experience—from anywhere.</p>
+            <a class="btn" href="#live-stream">Join Live Stream</a>
+            <a href="about.html" class="nextpage-btn">Go to Next Page</a>
+        </div>
+        <!-- Recommended study classroom image -->
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80" alt="Students studying in a classroom">
+    </div>
+
+    <div id="live-stream" class="section card">
+        <h2>Live Stream</h2>
+        <iframe width="100%" height="350" src="https://www.youtube.com/embed/70J3FMAXY_U" title="Live Class Demo" frameborder="0" allowfullscreen></iframe>
+        <div class="nav-quick">
+            <a href="#product">Go to Product</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div id="product" class="section card">
+        <h2>Product</h2>
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80" alt="Students studying in a classroom" style="width:100%;max-width:390px;float:right;margin-left:2em;">
+        <ul>
+            <li>Virtual whiteboards and interactive polls</li>
+            <li>AI-powered quizzes & attendance</li>
+            <li>Secure platform for students and teachers</li>
+        </ul>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div id="solution" class="section card">
+        <h2>Solution</h2>
+        <p>SmartRoom uses AI to enhance participation, accessibility, and track online learning performance for every student.</p>
+    </div>
+
+    <div id="pricing" class="section card">
+        <h2>Pricing</h2>
+        <table>
+            <tr><th>Plan</th><th>Features</th><th>Price/Month</th></tr>
+            <tr><td>Basic</td><td>Live Classes, Resources</td><td>Free</td></tr>
+            <tr><td>Pro</td><td>All Basic + AI Tools</td><td>₹499</td></tr>
+            <tr><td>Enterprise</td><td>All Pro + Support</td><td>Custom</td></tr>
+        </table>
+    </div>
+
+    <div id="resources" class="section card">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80" target="_blank">Download Study Notes</a></li>
+            <li><a href="#live-stream">Recorded Sessions</a></li>
+            <li><a href="https://livestorm.co/blog/online-teaching-tools-platforms" target="_blank">Quick-start Guides</a></li>
+        </ul>
+    </div>
+
+    <div id="free-tools" class="section card">
+        <h2>Free Tools</h2>
+        <ul>
+            <li>AI Attendance Tracker</li>
+            <li>Quiz Maker</li>
+            <li>Transcript Summarizer</li>
+        </ul>
+    </div>
+
+    <div id="login" class="section card">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required style="width:90%;padding:0.7em;margin-bottom:0.7em;"><br>
+            <input type="password" placeholder="Password" required style="width:90%;padding:0.7em;margin-bottom:0.7em;"><br>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="live-demo" class="section card">
+        <h2>Live Demo</h2>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/70J3FMAXY_U" title="Live Demo"></iframe>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span onclick="document.getElementById('signupModal').style.display='none'" class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+          <input type="text" placeholder="Username" required style="width:90%;padding:0.7em;margin-bottom:0.7em;"><br>
+          <input type="email" placeholder="Email" required style="width:90%;padding:0.7em;margin-bottom:0.7em;"><br>
+          <input type="password" placeholder="Password" required style="width:90%;padding:0.7em;margin-bottom:0.7em;"><br>
+          <input type="password" placeholder="Repeat Password" required style="width:90%;padding:0.7em;margin-bottom:0.7em;"><br>
+          <button class="btn" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      // Close modal when user clicks outside of modal-content
+      window.onclick = function(event) {
+        var modal = document.getElementById('signupModal');
+        if (event.target == modal) { modal.style.display = "none"; }
+      }
+    </script>
+
+    <footer>
+        &copy; 2025 Mamatha Sudani | 📞 7989338184 | ✉️ sudanimamatha608@gmail.com
+    </footer>
+</body>
+</html>
+
