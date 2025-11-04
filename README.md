@@ -1,4 +1,3 @@
----
 ***🎓 Virtual Student Classroom AI***
 
 Transforming traditional classrooms into interactive, intelligent digital learning spaces.
